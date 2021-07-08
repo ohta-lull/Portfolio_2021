@@ -1,0 +1,64 @@
+section.fv {
+    max-width: 100%;
+    background: $color-white;
+    height: 800px;
+
+    // background: url(../images/main.webp) no-repeat center/contain;
+    h2 {
+        color: $color-txt;
+        font-size: 56px;
+        font-family: $font-gen;
+
+        span.min {
+            font-size: 44px;
+        }
+
+        // 游ゴシック
+        &:after {
+            content: "User's voice × Professional voice ";
+            font-size: $txt-min;
+
+        }
+    }
+}
+
+// トップインタビュー
+
+.top-wrapper {
+    display: flex;
+    align-items: flex-start;
+    max-width: $layout-width-inner-max;
+    justify-content: center;
+    margin: auto auto 8vw auto;
+}
+
+.top-interview {
+
+    .inner {
+        max-width: $layout-width-inner_col-8;
+        width: 100%;
+        margin: 0;
+    }
+}
+
+
+.top-sidebar {
+    max-width: $layout-width-inner_col-3_1;
+    width: 100%;
+    margin: 0;
+
+    .top-tag {
+        margin-top: 4vw;
+    }
+}
+
+
+.top-about .inner {
+    display: flex;
+}
+
+.top-about-left,
+.top-about-right {
+    max-width: $layout-width-inner_col-6;
+    width: 100%;
+}

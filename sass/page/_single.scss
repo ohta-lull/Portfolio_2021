@@ -1,0 +1,23 @@
+.single {
+    .post-img {
+        img {
+            max-width: $layout-width-inner_col-6;
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+
+.post-main {
+    h3 {
+        margin-top: 2vw;
+        font-size: 32px;
+    }
+}
+
+
+.single-shop-info,
+.member-work {
+    margin-top: 12vw;
+}

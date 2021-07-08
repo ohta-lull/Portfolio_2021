@@ -1,0 +1,40 @@
+section {
+  max-width: $layout-width-inner-max;
+  margin: auto;
+  width: 100%;
+}
+
+.inner {
+  max-width: $layout-width-inner-max;
+  width: 100%;
+  margin: auto;
+}
+
+.pagetop {
+  width: 70px;
+  z-index: 90;
+}
+
+.btn {
+  @include btn();
+}
+
+.btn_wh {
+  @include btn(#fff);
+}
+
+
+.service-tag {
+  margin: 5px 0 5px -5px;
+
+  li {
+    display: inline-block;
+    background: $color-contact-bg;
+    color: $color-txt;
+    border-radius: 2px;
+    padding: 5px;
+    margin: 0 0 5px 5px;
+    font-size: $txt-nor;
+  }
+
+}

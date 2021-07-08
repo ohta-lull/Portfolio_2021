@@ -1,0 +1,103 @@
+header {
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+
+    @include mq('sp') {
+        padding: 0;
+    }
+
+    .g-navi {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    h1 {
+        width: $layout-logo;
+
+        @include mq('sp') {
+            width: 150px;
+        }
+    }
+
+    nav {
+
+        @include mq('sp') {
+            position: absolute;
+            width: 100%;
+            text-align: center;
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+
+            @include mq('sp') {
+                display: block;
+            }
+        }
+
+        li {
+            &:first-child {
+                margin-left: 0;
+            }
+
+            a {
+                font-family: $font-tcm;
+                position: relative;
+            }
+
+
+
+            // &.current {
+            //     a,
+            //     a:hover,
+            //     a:visited {
+            //         -webkit-background-clip: text;//テキストでくり抜く
+            //         -webkit-text-fill-color: transparent;//くり抜いた部分は背景を表示
+            //                  @include mq('sp') {
+            //                     color: $color-white;
+            //                     -webkit-text-fill-color: currentcolor;
+            //                  }
+            //     }
+            // }
+
+            a::after {
+                content: '';
+                /*絶対配置で線の位置を決める*/
+                position: absolute;
+                bottom: -8px;
+                left: 5%;
+                width: 90%;
+                height: 2px;
+                /*アニメーションの指定*/
+                transition: all .3s;
+                transform: scale(0, 1);
+                /*X方向0、Y方向1*/
+                transform-origin: center top;
+                /*上部中央基点*/
+            }
+
+            /*現在地とhoverの設定*/
+            &.current a::after,
+            a:hover::after {
+                transform: scale(1, 1);
+                /*X方向にスケール拡大*/
+            }
+
+            margin-left: 15px;
+        }
+
+        .btn_bl {
+            margin: 0;
+            width: 100px;
+            filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.6));
+
+            &::after {
+                background: transparent;
+            }
+        }
+    }
+}
