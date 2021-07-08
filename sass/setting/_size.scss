@@ -7,9 +7,9 @@ $layout-width-inner_col-7: 615px;
 $layout-width-inner_col-6: 525px;
 $layout-width-inner_col-5: 434px;
 $layout-width-inner_col-4: 344px;
-$layout-width-inner_col-6_1: 540px;
+$layout-width-inner_col-8_1: 72vw;
 $layout-width-inner_col-5_1: 450px;
-$layout-width-inner_col-3_1: 270px;
+$layout-width-inner_col-4: 28vw;
 
 $breakpoints: ("sp": "screen and (max-width: 767px)",
   "tab": "screen and (max-width: #{$layout-width-inner-max - 1px})",

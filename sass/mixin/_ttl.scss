@@ -1,84 +1,10 @@
-@mixin ttl-second() {
-    font-size: $ttl-second;
-    font-family: $font-gen;
+@mixin ttl() {
+    text-align: right;
+    font-size: $ttl;
 
-    @include mq('sp') {
-        @include fontsizeVw(65);
-    }
-
-    &:before {
-        content: "";
-        width: 100%;
-        height: 1px;
-        background: $color-txt;
+    span {
         display: block;
-    }
-
-    .ttl-message-en {
-        margin-top: 5px;
-        display: block;
-    }
-
-
-    .ttl-message-ja {
-        display: flex;
-        align-items: center;
-        margin: 5vw 0 2vw;
-    }
-
-
-}
-
-@mixin ttl-third() {
-    text-align: left;
-    font-size: $ttl-third;
-    margin-bottom: 40px;
-
-    &::after {
-        content: "";
-        display: block;
-        width: 100%;
-        height: 2px;
-        margin-top: 5px;
-    }
-}
-
-@mixin ttl-sub {
-    padding-top: 10vw;
-    font-family: $font-tcm;
-    font-weight: 100;
-    margin-bottom: 4vw;
-
-    &::after {
-        content: "";
-        display: block;
-        width: 100%;
-        height: 1px;
-        background: $color-txt;
-        // margin-top: 4vw;
-    }
-
-    @include mq('sp') {
-        height: 200px;
-    }
-
-    .sub-ttl {
-        font-size: $ttl;
-        letter-spacing: 2px;
-
-
-        @include mq('sp') {
-            @include fontsizeVw(65);
-            max-height: 95px;
-            min-height: 80px;
-        }
-    }
-
-    .txt-ja {
         font-size: $txt-min;
-        font-family: $font-noto;
-        text-align: right;
+        font-family: $font-tcm;
     }
-
-
 }
