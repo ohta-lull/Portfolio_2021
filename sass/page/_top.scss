@@ -125,6 +125,10 @@ h1 {
         margin-right: 1em;
         padding-top: 4vw;
         margin-bottom: 1.2em;
+
+        @include mq('sp') {
+            margin-right: 0;
+        }
     }
 
     .about-img {
@@ -133,6 +137,8 @@ h1 {
 
         @include mq('sp') {
             width: 60%;
+            height: auto;
+            margin-bottom: 5vw;
         }
     }
 
@@ -164,6 +170,10 @@ h1 {
             display: flex;
             align-items: center;
             margin-bottom: .3em;
+
+            @include mq('sp') {
+                display: block;
+            }
 
             &:nth-child(4) {
                 span {
@@ -205,6 +215,10 @@ h1 {
         &>ul {
             display: flex;
             justify-content: space-between;
+
+            @include mq('sp') {
+                flex-wrap: wrap;
+            }
         }
     }
 
@@ -240,10 +254,15 @@ h1 {
 
         @include mq('sp') {
             display: block;
+            margin: 19vw 0;
         }
 
         h3 {
             font-family: $font-tcm;
+
+            @include mq('sp') {
+                font-size: 9vw;
+            }
 
             &::before {
                 content: "";
@@ -258,39 +277,23 @@ h1 {
             }
         }
 
-
-        // .works-list_scroll {
-        //     width: calc(100% - 16em);
-        //     overflow-y: auto;
-
-        //     @include mq('sp') {
-        //         width: 100%;
-        //     }
-
-        //     ul {
-        //         width: 2500px;
-        //         justify-content: normal;
-
-        //         @include mq('sp') {
-        //             width: 2000px;
-        //         }
-
-        //         li {
-        //             width: calc(100% / 3 - 4vw);
-        //             margin-right: 4vw;
-        //         }
-        //     }
-        // }
-
         ul {
             display: flex;
             width: 100%;
             justify-content: space-between;
             margin-top: 2vw;
-            ;
+
+            @include mq('sp') {
+                display: block;
+            }
 
             li {
                 width: calc(100% / 3 - 20px);
+
+                @include mq('sp') {
+                    width: 100%;
+                    margin-bottom: 10vw;
+                }
 
                 img {
                     height: 230px;
@@ -331,8 +334,17 @@ h1 {
         flex-wrap: wrap;
         justify-content: space-between;
 
+        @include mq('sp') {
+            display: flex;
+        }
+
         li {
             width: calc(100% / 5 - 20px);
+
+            @include mq('sp') {
+                width: 100%;
+            }
+
 
             img {
                 // height: 110px;

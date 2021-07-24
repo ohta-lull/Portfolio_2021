@@ -2,6 +2,10 @@
     text-align: right;
     font-size: $ttl;
 
+    @include mq('sp') {
+        font-size: 45px;
+    }
+
     span {
         display: block;
         font-size: $txt-min;
