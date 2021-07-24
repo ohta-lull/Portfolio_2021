@@ -24,22 +24,12 @@
                 url(../font/TCM.woff) format('woff');
 }
 
-@font-face {
-        font-family: 'TCB';
-        font-style: normal;
-        font-weight: 500;
-        src: url(../font/TCB.woff2) format('woff2'),
-                url(../font/TCB.woff) format('woff');
-}
-
 $font-noto: 'NotoSansCJKjp',
 sans-serif;
 $font-gen: source-han-sans-japanese,
 'NotoSansCJKjp',
 sans-serif;
 $font-tcm: 'TCM',
-sans-serif;
-$font-tcb: 'TCB',
 sans-serif;
 // 源ノ角はfont-weight: 700;
 
