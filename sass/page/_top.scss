@@ -5,7 +5,7 @@
     .fv-ttl {
         max-width: $layout-width-inner_col-8_1;
         width: 100%;
-        background: url(../images/main.JPG) center/cover;
+        background: url(../images/main.jpg) center/cover;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -114,7 +114,7 @@ h1 {
         display: block;
         height: 23em;
         width: 80%;
-        background: url(../images/aboutme_bg.JPG) center/cover;
+        background: url(../images/aboutme_bg.jpg) center/cover;
         position: absolute;
         right: 0;
         z-index: -1;
@@ -358,7 +358,7 @@ h1 {
     width: 100%;
     height: 400px;
     margin-top: 16vw;
-    background: url(../images/personal_works_bg.JPG) no-repeat center/cover;
+    background: url(../images/personal_works_bg.jpg) no-repeat center/cover;
 
     @include mq('sp') {
         height: 180px;
@@ -382,7 +382,7 @@ h1 {
 
     .contact-ttl {
         padding-left: 8vw;
-        background: url(../images/contact.JPG) no-repeat center/cover;
+        background: url(../images/contact.jpg) no-repeat center/cover;
         padding: 5vw;
         width: 50%;
         text-align: left;
