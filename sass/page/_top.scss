@@ -222,6 +222,221 @@ h1 {
         }
     }
 
+    .note img {
+        width: 25px;
+        margin-top: -3px;
+    }
+
+}
+
+.about-skils {
+    margin-right: 5em;
+    margin-top: 10vw;
+
+    @include mq('sp') {
+        margin-right: 0;
+    }
+
+    &>ul {
+        display: flex;
+        justify-content: space-between;
+
+        @include mq('sp') {
+            display: block;
+        }
+
+        &>li {
+            width: 49%;
+            background: #eee;
+            padding: 2vw;
+
+            @include mq('sp') {
+                width: 100%;
+            }
+
+            dt {
+                font-size: 24px;
+                font-weight: bold;
+                margin-bottom: 2vw;
+            }
+        }
+
+        ul li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1vw;
+
+            &::before {
+                margin-right: 1vw;
+                width: 50px;
+                height: 50px;
+            }
+
+            span {
+                color: $color-green;
+                font-size: 25px;
+                margin-left: 1vw;
+            }
+
+            &.other-tools {
+                display: block;
+
+                dt {
+                    margin-top: 3vw;
+                }
+            }
+        }
+    }
+
+    .design-tools {
+        ul li {
+            &:first-child {
+                &::before {
+                    content: "";
+                    display: block;
+                    background: url(../images/icon/photoshop.png) no-repeat center/contain;
+
+
+                }
+            }
+
+            &:nth-child(2) {
+                &::before {
+                    content: "";
+                    display: block;
+                    background: url(../images/icon/illustrator.png) no-repeat center/contain;
+
+
+                }
+            }
+
+            &:nth-child(3) {
+                &::before {
+                    content: "";
+                    display: block;
+                    background: url(../images/icon/xd.png) no-repeat center/contain;
+
+
+                }
+            }
+        }
+    }
+
+    .other-tools {
+        ul li {
+            width: 100%;
+
+            &:first-child {
+                &::before {
+                    content: "";
+                    display: block;
+                    background: url(../images/icon/wp.png) no-repeat center/contain;
+
+
+                }
+            }
+
+            &:nth-child(2) {
+                &::before {
+                    content: "";
+                    display: block;
+                    background: url(../images/icon/github.png) no-repeat center/contain;
+                }
+            }
+
+            &:nth-child(3) {
+                &::before {
+                    content: "";
+                    display: block;
+                    background: url(../images/icon/ga.png) no-repeat center/contain;
+                }
+            }
+        }
+    }
+
+    .coding-tools {
+        ul li {
+            &:first-child {
+                &::before {
+                    content: "";
+                    display: block;
+                    background: url(../images/icon/html.png) no-repeat center/contain;
+
+
+                }
+            }
+
+            &:nth-child(2) {
+                &::before {
+                    content: "";
+                    display: block;
+                    background: url(../images/icon/css.png) no-repeat center/contain;
+
+
+                }
+            }
+
+            &:nth-child(3) {
+                &::before {
+                    content: "";
+                    display: block;
+                    background: url(../images/icon/scss.png) no-repeat center/contain;
+
+
+                }
+            }
+
+            &:nth-child(4) {
+                &::before {
+                    content: "";
+                    display: block;
+                    background: url(../images/icon/jquery.png) no-repeat center/contain;
+
+
+                }
+            }
+
+            &:nth-child(5) {
+                &::before {
+                    content: "";
+                    display: block;
+                    background: url(../images/icon/js.png) no-repeat center/contain;
+
+
+                }
+            }
+
+            &:nth-child(6) {
+                &::before {
+                    content: "";
+                    display: block;
+                    background: url(../images/icon/php.png) no-repeat center/contain;
+
+
+                }
+            }
+
+            &:nth-child(7) {
+                &::before {
+                    content: "";
+                    display: block;
+                    background: url(../images/icon/vue.png) no-repeat center/contain;
+
+
+                }
+            }
+
+            &:last-child {
+                &::before {
+                    content: "";
+                    display: block;
+                    background: url(../images/icon/react.png) no-repeat center/contain;
+
+
+                }
+            }
+        }
+    }
 }
 
 
@@ -421,7 +636,52 @@ h1 {
 }
 
 footer {
+    margin-top: 5vw;
     background: #313131;
     color: $color-white;
     text-align: center;
+
+    h1 {
+        font-size: 6vw;
+        letter-spacing: 3px;
+
+        @include mq('sp') {
+            padding: 5vw;
+        }
+
+        a,
+        a:hover,
+        a:visited {
+            color: $color-white;
+        }
+    }
+
+    nav {
+        background: #eee;
+        padding: 2vw 0;
+
+        ul {
+            max-width: $layout-width-inner-max;
+            width: 100%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            @include mq('sp') {
+                margin-bottom: -2vw;
+            }
+
+            li {
+                @include mq('sp') {
+                    margin-bottom: 2vw;
+                }
+            }
+
+            @include mq('sp') {
+                display: block;
+            }
+
+        }
+    }
 }
