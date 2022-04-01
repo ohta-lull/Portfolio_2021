@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css">
   <title>N.A Portfolio</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -97,48 +99,18 @@
               <h3>career</h3>
               <ul>
                 <li>
-                  <p>2018/04</p>
-                  <p>株式会社チクブバッケージシステム 入社</p>
+                  <p>2019/03-2021/09</p>
+                  <p>web制作会社 入社 webデザイン業務従事</p>
                 </li>
                 <li>
-                  <p>2018/07</p>
-                  <p>株式会社チクブバッケージシステム 退社</p>
-                </li>
-                <li>
-                  <p>2018/07</p>
-                  <p>デコランド株式会社　アルバイト入社</p>
-                </li>
-                <li>
-                  <p>2018/10</p>
-                  <p>TOHOシネマズ株式会社　アルバイト入社</p>
-                </li>
-                <li>
-                  <p>2019/02</p>
-                  <p>デコランド株式会社、TOHOシネマズ株式会社　アルバイト退社</p>
-                </li>
-                <li>
-                  <p>2019/03</p>
-                  <p>株式会社トリニアス 入社</p>
-                </li>
-                <li>
-                  <p>2019/06</p>
-                  <p><span>web事業部が子会社化</span>
-                                  株式会社LULL デジタルクリエーション事業部 所属</p>
-                </li>
-                <li>
-                  <p>2021/02</p>
-                  <p>デジタルクリエーション事業部 主任に昇進</p>
-                </li>
-                <li>
-                  <p>2021/09</p>
-                  <p>株式会社LULL 退社</p>
-                </li>
-                <li>
-                  <p>2021/10</p>
+                  <p>2021/10-2022/01</p>
                   <p>大手ECサイト サイト改修、計測業務従事</p>
                 </li>
                 <li>
-                  <p>2022/01</p>
+                  <p>2022/02-2022/03</p>
+                  <p>金融サイト 新金融商品開発モック、デザイン、UI業務要件書作成業務従事</p>
+                </li>
+                <li>
                   <p>現在に至る</p>
                 </li>
               </ul>
@@ -204,143 +176,354 @@
             <li>ディレクター</li>
           </ul>
         </div>
+        <div class="work-list">
+          <ul>
+            <li>
+              <a href="https://neo-flow.net/" target="_blank" rel="noopener noreferrer">
 
-        <div class="works-list">
-          <section class="works-list_item">
-            <h3>LP</h3>
-            <div class="works-list_scroll">
+                <p class="works-ttl">NEOFLOW株式会社　コーポレートサイト<span class="material-icons-outlined">
+                    open_in_new
+                  </span></p>
+                <div class="flex">
+                  <figure>
+                    <img src="images/works/hp/04.png" alt="NEOFLOW株式会社　コーポレートサイト">
+                  </figure>
+                  <div class="work-detail">
+                    <dl>
+                      <dt>制作環境</dt>
+                      <dd>mac OS</dd>
+                      <dd>VScode</dd>
+                    </dl>
+                    <dl>
+                      <dt>言語</dt>
+                      <dd>HTML</dd>
+                      <dd>SCSS</dd>
+                      <dd>JavaScript</dd>
+                    </dl>
+                    <dl>
+                      <dt>その他</dt>
+                      <dd>WordPress</dd>
+                      <dd>Adobe Photoshop</dd>
+                      <dd>Adobe illustrator</dd>
+                    </dl>
+
+                    <dl>
+                      <dt>製作期間</dt>
+                      <dd>2週間</dd>
+                    </dl>
+                  </div>
+                </div>
+
+              </a>
+            </li>
+            <li class="vue-section">
+              <p class="works-ttl">Vue.js自主制作 ToDolist</p>
+              <div class="flex">
+                <figure>
+                  <img src="images/vue/01.png" alt="Vue.js自主制作ToDolist">
+                </figure>
+                <div class="work-detail">
+                  <dl>
+                    <dt>制作環境</dt>
+                    <dd>mac OS</dd>
+                    <dd>VScode</dd>
+                  </dl>
+                  <dl>
+                    <dt>言語</dt>
+                    <dd>HTML</dd>
+                    <dd>SCSS</dd>
+                    <dd>Vue.js</dd>
+                  </dl>
+                  <dl>
+                    <dt>製作期間</dt>
+                    <dd>2日間</dd>
+                  </dl>
+                </div>
+              </div>
+              <div class="code flex">
+                <dl>
+                  <dt>HTML</dt>
+                  <dd>
+                    <pre><code>&lt;!DOCTYPE html&gt;
+                                                  &lt;html&gt;
+                                                  &lt;head&gt;
+                                                    &lt;meta charset=&quot;utf-8&quot;&gt;
+                                                    &lt;title&gt;Vue.js App&lt;/title&gt;
+                                                    &lt;link rel=&quot;stylesheet&quot; href=&quot;main.css&quot;&gt;
+                                                  &lt;/head&gt;
+                                                  &lt;body&gt;
+                                                    &lt;div id=&quot;app&quot;&gt;
+                                                      &lt;label v-for=&quot;label in options&quot;&gt;
+                                                        &lt;input type=&quot;radio&quot; v-model=&quot;current&quot; v-bind:value=&quot;label.value&quot;&gt;
+                                                        {{ label.label }}
+                                                      &lt;/label&gt;
+                                                      ({{ computedTodos.length }} 件を表示)
+                                                      &lt;table&gt;
+                                                        &lt;thead v-pre&gt;
+                                                          &lt;tr&gt;
+                                                            &lt;th class=&quot;id&quot;&gt;ID&lt;/th&gt;
+                                                            &lt;th class=&quot;comment&quot;&gt;コメント&lt;/th&gt;
+                                                            &lt;th class=&quot;state&quot;&gt;状態&lt;/th&gt;
+                                                            &lt;th class=&quot;button&quot;&gt;-&lt;/th&gt;
+                                                          &lt;/tr&gt;
+                                                        &lt;/thead&gt;
+                                                        &lt;tbody&gt;
+                                                          &lt;tr v-for=&quot;item in computedTodos&quot; v-bind:key=&quot;item.id&quot; v-bind:class=&quot;{done:item.state}&quot;&gt;
+                                                            &lt;th&gt;{{ item.id }}&lt;/th&gt;
+                                                            &lt;td&gt;{{ item.comment }}&lt;/td&gt;
+                                                            &lt;td class=&quot;state&quot;&gt;
+                                                              &lt;button v-on:click=&quot;doChangeState(item)&quot;&gt;
+                                                                {{ labels[item.state] }}
+                                                              &lt;/button&gt;
+                                                            &lt;/td&gt;
+                                                            &lt;td class=&quot;button&quot;&gt;
+                                                              &lt;!--コントロールをおしながらのクリックのときだけ反応する指示だった &lt;button v-on:click.ctrl=&quot;doRemove(item)&quot;&gt; --&gt;
+                                                              &lt;button v-on:click=&quot;doRemove(item)&quot;&gt;
+                                                                削除
+                                                              &lt;/button&gt;
+                                                            &lt;/td&gt;
+                                                          &lt;/tr&gt;
+
+                                                        &lt;/tbody&gt;
+                                                      &lt;/table&gt;
+
+                                                      &lt;h2&gt;新しい作業の追加&lt;/h2&gt;
+                                                      &lt;form class=&quot;add-form&quot; v-on:submit.prevent=&quot;doAdd&quot;&gt;
+                                                        コメント &lt;input type=&quot;text&quot; ref=&quot;comment&quot;&gt;
+                                                        &lt;button type=&quot;submit&quot;&gt;追加&lt;/button&gt;
+                                                      &lt;/form&gt;
+                                                    &lt;/div&gt;
+                                                    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js&quot;&gt;&lt;/script&gt;
+                                                    &lt;script src=&quot;./main.js&quot;&gt;&lt;/script&gt;
+                                                  &lt;/body&gt;
+                                                  &lt;/html&gt;
+                    </code></pre>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>JS</dt>
+                  <dd>
+                    <pre><code>
+                      // vue公式のTodoMVCの例から持ってきたコード
+                      var STORAGE_KEY = 'todos-vuejs-demo'
+                      var todoStorage = {
+                        fetch: function () {
+                          var todos = JSON.parse(
+                            localStorage.getItem(STORAGE_KEY) || '[]'
+                          )
+                          todos.forEach(function (todo, index) {
+                            todo.id = index
+                          })
+                          todoStorage.uid = todos.length
+                          return todos
+                        },
+                        save: function (todos) {
+                          localStorage.setItem(STORAGE_KEY, JSON.stringify(todos))
+                        }
+                      }
+                      // vue公式のTodoMVCここまで
+
+                       new Vue({
+                        el: '#app',
+                        data: {
+                          todos: [],
+                          options: [
+                            { value: -1, label: 'すべて' },
+                            { value: 0, label: '作業中' },
+                            { value: 1, label: '完了' }
+                          ],
+                          //★1 この記述がなかったから読み込み時に表示されてなかった→current: -1
+                          current: -1
+                         },
+                        computed: {
+                          computedTodos: function () {
+                            // データ current が -1 ならすべて
+                            // それ以外なら current と state が一致するものだけに絞り込む
+                            return this.todos.filter(function (el) {
+                              return this.current lt; 0 ? true : this.current === el.state
+                            }, this)
+                          },
+                          labels() {
+                            return this.options.reduce(function (a, b) {
+                              return Object.assign(a, { [b.value]: b.label })
+                            }, {})
+                          }
+                        },
+                         watch: {
+                          todos: {
+                            handler: function (todos) {
+                              todoStorage.save(todos)
+                            },
+                            deep: true
+                          }
+                        },
+                        created() {
+                          this.todos = todoStorage.fetch()
+                        },
+                         methods: {
+                           doAdd: function (event, value) {
+                             var comment = this.$refs.comment
+                             if (!comment.value.length) {
+                               return
+                             }
+                             this.todos.push({
+                               id: todoStorage.uid++,
+                               comment: comment.value,
+                               state: 0
+                             })
+                             comment.value = ''
+                           },
+                           doChangeState: function (item) {
+                             item.state = !item.state ? 1 : 0
+                           },
+                           doRemove: function (item) {
+                             var index = this.todos.indexOf(item)
+                             this.todos.splice(index, 1)
+                           }
+                         }
+
+                      })
+                    </code></pre>
+                  </dd>
+                </dl>
+              </div>
+            </li>
+          </ul>
+          <div class="works-list">
+            <section class="works-list_item">
+              <h3>LP</h3>
+              <div class="works-list_scroll">
+                <ul>
+
+                  <li>
+                    <p>
+                      <figure>
+                        <img src="images/works/lp/01.jpg" alt="大手ティーブランドキャンペーンサイト 第一弾">
+                      </figure>
+                      <p class="works-ttl">
+                        大手ティーブランドキャンペーンサイト第一弾
+                      </p>
+                    <p>html css js aws</p>
+                    <p>コーディングのみ</p>
+                    </p>
+                  </li>
+                  <li>
+
+                    <p>
+                      <figure>
+                        <img src="images/works/lp/02.jpg" alt="大手ティーブランドキャンペーンサイト　第二弾">
+                      </figure>
+                      <p class="works-ttl">
+                        大手ティーブランドキャンペーンサイト第二弾
+                      </p>
+                    <p>html css js aws</p>
+                    <p>コーディングのみ</p>
+                    </p>
+                  </li>
+                  <li>
+
+                    <p>
+                      <figure>
+                        <img src="images/works/lp/03.jpg" alt="美容室LP">
+                      </figure>
+                      <p class="works-ttl">
+                        美容室LP
+                      </p>
+                    <p>html css js</p>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="works-list_item">
+              <h3>HP</h3>
               <ul>
                 <li>
-
                   <p>
                     <figure>
-                      <img src="images/works/lp/01.jpg" alt="大手ティーブランドキャンペーンサイト 第一弾">
+                      <img src="images/works/hp/01.jpg" alt="MEOprime">
                     </figure>
                     <p class="works-ttl">
-                      大手ティーブランドキャンペーンサイト第一弾
-                    </p>
-                  <p>html css js aws</p>
-                  <p>コーディングのみ</p>
-                  </p>
-                </li>
-                <li>
-
-                  <p>
-                    <figure>
-                      <img src="images/works/lp/02.jpg" alt="大手ティーブランドキャンペーンサイト　第二弾">
-                    </figure>
-                    <p class="works-ttl">
-                      大手ティーブランドキャンペーンサイト第二弾
-                    </p>
-                  <p>html css js aws</p>
-                  <p>コーディングのみ</p>
-                  </p>
-                </li>
-                <li>
-
-                  <p>
-                    <figure>
-                      <img src="images/works/lp/03.jpg" alt="美容室LP">
-                    </figure>
-                    <p class="works-ttl">
-                      美容室LP
+                      サービスサイト
                     </p>
                   <p>html css js WordPress</p>
                   </p>
                 </li>
-              </ul>
-            </div>
-          </section>
 
-          <section class="works-list_item">
-            <h3>HP</h3>
-            <ul>
-              <li>
-                <p>
-                  <figure>
-                    <img src="images/works/hp/01.jpg" alt="MEOprime">
-                  </figure>
-                  <p class="works-ttl">
-                    サービスサイト
-                  </p>
-                <p>html css js WordPress</p>
-                </p>
-              </li>
-
-              <li>
-                <p>
-                  <figure>
-                    <img src="images/works/hp/02.jpg" alt="UmphRoad">
-                  </figure>
-                  <p class="works-ttl">
-                    化粧品メーカーコーポレートサイト
-                  </p>
-                <p>html css js WordPress</p>
-                <p>コーディングのみ</p>
-                </p>
-              </li>
-
-              <li>
-                <p>
-                  <figure>
-                    <img src="images/works/hp/03.jpg" alt="UmphRoad">
-                  </figure>
-                  <p class="works-ttl">
-                                    リフォームメーカーコーポレートサイト
-                                  </p>
-                <p>html css js </p>
-                <p>本番化未対応</p>
-                </p>
-              </li>
-
-            </ul>
-          </section>
-          <section class="works-list_item">
-            <h3>BANNER</h3>
-
-            <div class="works-list_scroll">
-              <ul>
                 <li>
-                  <figure>
-                    <img src="images/works/banner/01.jpg" alt="アパレルバナー">
-                  </figure>
-                  <p class="works-ttl">
-                    アパレルバナー
+                  <p>
+                    <figure>
+                      <img src="images/works/hp/02.jpg" alt="UmphRoad">
+                    </figure>
+                    <p class="works-ttl">
+                      化粧品メーカーコーポレートサイト
+                    </p>
+                  <p>html css js WordPress</p>
+                  <p>コーディングのみ</p>
                   </p>
-                  <p>Photoshop</p>
                 </li>
+
                 <li>
-                  <figure>
-                    <img src="images/works/banner/02.jpg" alt="アパレルバナー">
-                  </figure>
-                  <p class="works-ttl">
-                    アパレルバナー
+                  <p>
+                    <figure>
+                      <img src="images/works/hp/03.jpg" alt="UmphRoad">
+                    </figure>
+                    <p class="works-ttl">
+                      リフォームメーカーコーポレートサイト
+                    </p>
+                  <p>html css js </p>
                   </p>
-                  <p>Photoshop</p>
-                </li>
-                <li>
-                  <figure>
-                    <img src="images/works/banner/03.jpg" alt="アパレルバナー">
-                  </figure>
-                  <p class="works-ttl">
-                    アパレルバナー
-                  </p>
-                  <p>Photoshop</p>
                 </li>
 
               </ul>
-            </div>
-          </section>
+            </section>
+            <section class="works-list_item">
+              <h3>BANNER</h3>
+
+              <div class="works-list_scroll">
+                <ul>
+                  <li>
+                    <figure>
+                      <img src="images/works/banner/01.jpg" alt="アパレルバナー">
+                    </figure>
+                    <p class="works-ttl">
+                      アパレルバナー
+                    </p>
+                    <p>Photoshop</p>
+                  </li>
+                  <li>
+                    <figure>
+                      <img src="images/works/banner/02.jpg" alt="アパレルバナー">
+                    </figure>
+                    <p class="works-ttl">
+                      アパレルバナー
+                    </p>
+                    <p>Photoshop</p>
+                  </li>
+                  <li>
+                    <figure>
+                      <img src="images/works/banner/03.jpg" alt="アパレルバナー">
+                    </figure>
+                    <p class="works-ttl">
+                      アパレルバナー
+                    </p>
+                    <p>Photoshop</p>
+                  </li>
+
+                </ul>
+              </div>
+            </section>
+          </div>
         </div>
-
       </div>
     </section>
 
     <section id="personal-works" class="personal-works">
       <div class="inner">
         <h2 class="ttl">
-          <span>PERSONAL WORKS</span>
-          自主制作
+          <span>YOUTUBE WORKS</span>
+          サムネイル制作
         </h2>
         <div class="personal-works-thumbnail">
           <ul>
@@ -465,5 +648,10 @@
 
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+  <script>
+    // ハイライトを実行
+    hljs.initHighlightingOnLoad();
+  </script>
 </body>
 </html>

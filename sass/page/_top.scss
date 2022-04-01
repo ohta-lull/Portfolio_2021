@@ -527,6 +527,55 @@ h1 {
         }
 
     }
+
+    .work-list {
+        ul {
+            margin-top: 2em;
+        }
+
+        dt {
+            margin-top: 1em;
+            font-weight: bold;
+        }
+    }
+
+    .flex {
+        figure {
+            width: 50%;
+        }
+
+        .work-detail {
+            margin-left: 2em;
+            margin-top: 0;
+        }
+    }
+
+    a .works-ttl {
+        text-decoration: underline;
+        font-weight: bold;
+
+        .material-icons-outlined {
+            font-size: 1em;
+        }
+    }
+
+    .works-ttl {
+        font-weight: bold;
+    }
+
+    .vue-section {
+        margin-top: 5em;
+
+        .code.flex {
+            justify-content: space-between;
+
+            dl {
+                width: 45%;
+            }
+        }
+    }
+
+
 }
 
 .personal-works {

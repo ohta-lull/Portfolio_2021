@@ -1,3 +1,7 @@
+.flex {
+  display: flex;
+}
+
 .bg-line_area {
   position: fixed;
   // width: 100%;
@@ -71,6 +75,26 @@
   }
 
 
+}
+
+// .code {
+//   width: 50%;
+//   margin-left: 2em;
+// }
+
+pre {
+  margin: 1em 0;
+  padding: 1em;
+  border-radius: 5px;
+  background: #25292f;
+  color: #fff;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
+
+  code {
+    max-height: 250px;
+  }
 }
 
 .ttl {
